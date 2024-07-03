@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SMR Petshop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/image/logo_v3.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+  </head>
+  <body>
+    
+      <nav id="navbar-example2" class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-4">
+        <div class="container">
+          <div class="logo d-flex align-items-center gap-2">
+            <img src="assets/image/logo.png" width="55" alt="" />
+            <a class="navbar-brand" href="#"> SMR PETSHOP </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav fw-bold fs-5">
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1" onclick="activateLink(this)">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2" onclick="activateLink(this)">Produk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading3" onclick="activateLink(this)">Layanan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading4" onclick="activateLink(this)">Lokasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading5" onclick="activateLink(this)">Galeri</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2">
+      <section class="hero" id="scrollspyHeading1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12 d-flex order-2">
+                    <div class="hero-text">
+                  <h1 class="display-4"> Pakan Terbaik untuk Peliharaan Kesayangan Anda </q></h1>
+                  <p class="lead">Temukan berbagai macam pakan berkualitas tinggi untuk anjing, kucing, dan hewan peliharaan lainnya. Kami menyediakan nutrisi terbaik untuk kesehatan dan kebahagiaan mereka.</p>
+                  <button href="#shop" class="btn btn-lg btn-primary mt-3">Belanja Sekarang</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 d-flex justify-content-center order-1 order-md-2">
+              <div class="hero-image-container">
+                <img src="assets/image/Cat.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="kategori" id="scrollspyHeading2">
+        <div class="container">
+          <h2 class="fw-bold text-uppercase text-center">Kami Menjual</h2>
+          <div class="divider"></div>
+          <div class="row gap-3 justify-content-center justify-content-md-start pt-4">
+            <div class="kategori-container d-flex">
+              <div class="kategori-teks d-flex flex-column justify-content-end">
+                <p class="fw-bold fs-4 lh-1">Pakan <br> Kucing</p>
+                <p class="kategori-desc">Kami Menjual Dry Food Dan Wet Food</p >
+
+                <a href="" class="btn btn-success btn-produk">Selengkapnya</a>
+              </div>
+              <div class="image-side" style="width: 100%;height: 100%;">
+                <img src="assets/image/orange_kitten.png" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+              </div>
+            </div>
+            <div class="kategori-container d-flex">
+              <div class="kategori-teks d-flex flex-column justify-content-end">
+                <p class="fw-bold fs-4 lh-1">Pakan <br> Anjing</p>
+                <p class="kategori-desc">Kami Menjual Dry Food Dan Wet Food</p >
+                <a href="" class="btn btn-success btn-produk">Selengkapnya</a>
+              </div>
+              <div class="image-side" style="width: 100%;height: 100%;">
+                <img src="assets/image/dog-02.png" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+              </div>
+            </div>
+            <div class="kategori-container d-flex">
+              <div class="kategori-teks d-flex flex-column justify-content-end">
+                <p class="fw-bold fs-4 lh-1">Pakan <br> Kelinci</p>
+                <p class="kategori-desc">Kami Menjual Dry Food Dan Wet Food</p >
+                <a href="" class="btn btn-success btn-produk">Selengkapnya</a>
+              </div>
+              <div class="image-side" style="width: 100%;height: 100%;">
+                <img src="assets/image/white-rabbit-02.png" alt="" style="width: 100%;height: 100%;object-fit: cover;object-position: left;">
+              </div>
+            </div>
+            <div class="kategori-container d-flex">
+              <div class="kategori-teks d-flex flex-column justify-content-end">
+                <p class="fw-bold fs-4 lh-1">Pakan <br> Hamster</p>
+                <p class="kategori-desc">Kami Menjual Dry Food Dan Wet Food</p >
+
+                <a href="" class="btn btn-success btn-produk">Selengkapnya</a>
+              </div>
+              <div class="image-side" style="width: 100%;height: 100%;">
+                <img src="assets/image/hamster-03.png" alt="" style="width: 100%;height: 100%;object-fit: cover;object-position: center;">
+              </div>
+            </div>
+            <div class="kategori-container d-flex">
+              <div class="kategori-teks d-flex flex-column justify-content-end">
+                <p class="fw-bold fs-4 lh-1">Kebutuhan <br> Lain</p>
+                <p class="kategori-desc">Kami Menjual Pasir Kucing, Shampoo, Sabun,Obat, Dll</p >
+
+                <a href="" class="btn btn-success btn-produk">Selengkapnya</a>
+              </div>
+              <div class="image-side" style="width: 100%;height: 100%;">
+                <img src="assets/image/kebutuhan.png" alt="" style="width: 100%;height: 100%;object-fit: cover;object-position: center;">
+              </div>
+            </div>
+            <div class="kategori-container d-flex">
+              <div class="kategori-teks d-flex flex-column justify-content-end">
+                <p class="fw-bold fs-4 lh-1">Peralatan <br> Lain</p>
+                <p class="kategori-desc">Kami Menjual Litter Box, Tempat Makan, Kandang, Dll</p >
+                <a href="" class="btn btn-success btn-produk">Selengkapnya</a>
+              </div>
+              <div class="image-side" style="width: 100%;height: 100%;">
+                <img src="assets/image/utilties.png" alt="" style="width: 100%;height: 100%;object-fit: cover;object-position: left;">
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section class="selling" id="scrollspyHeading3">
+      <div class="container">
+        <h2 class="text-center text-uppercase fw-bold">Layanan Kami</h2>
+        <div class="divider"></div>
+        <div class="row pt-5 justify-content-center">
+          <div class="col-md-3 col-12">
+            <div class="selling__container">
+              <div class="icon">
+                <i class="fa-solid fa-shower"></i>
+              </div>
+              <div class="title fw-bold">
+                Grooming
+              </div>
+              <div class="desc">
+                <q>Layanan grooming kami memastikan peliharaan Anda tampil bersih, rapi, dan sehat dengan perawatan profesional.</q>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="selling__container">
+              <div class="icon">
+                <i class="fa-solid fa-hotel"></i>
+              </div>
+              <div class="title fw-bold">
+                <p>Pet Hotel</p>
+              </div>
+              <div class="desc"><q>Tinggalkan peliharaan Anda di pet hotel kami yang nyaman dan aman, dengan fasilitas lengkap dan pengawasan 24 jam.</q></div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="selling__container">
+              <div class="icon">
+                <i class="fa-solid fa-scissors"></i>
+              </div>
+              <div class="title fw-bold">
+                <p>Lion Cut</p>
+              </div>
+              <div class="desc"><q>Dapatkan tampilan Lion Cut untuk kucing Anda dengan potongan bulu khas yang rapi dan stylish.</q></div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="selling__container">
+              <div class="icon">
+                <i class="fa-solid fa-syringe"></i>
+              </div>
+              <div class="title fw-bold">
+                <p>Vaksin</p>
+              </div>
+              <div class="desc"><q>Lindungi kesehatan peliharaan Anda dengan layanan vaksinasi kami yang lengkap dan aman.</q></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section class="about-us" id="scrollspyHeading4">
+        <div class="container">
+          <h2 class="text-center fw-bold pb-2 text-uppercase">Toko Kami</h2>
+          <div class="divider"></div>
+          <div class="row pt-4">
+              <div class="col-md-6 col-12">
+                <div class="about-image-container">
+                  <img src="assets/image/toko.jpeg" alt="" class="rounded"/>
+                </div>
+              </div>
+            <div class="col-md-6 col-12 about-teks">
+              <div class="about-text pt-4">
+                <h4 class="fw-bold text-center text-md-start"> Love And Care Your Pets</h4>
+                <p class="text-center text-md-start">Kunjungi pet shop kami yang berlokasi di dua tempat strategis untuk memenuhi kebutuhan peliharaan Anda. Temukan kami di:</p>
+                
+                  <p class="fw-bold mb-0 text-center text-md-start">Toko Pertama :</p>
+                  <p class="text-center text-md-start">Jl. Yos. Sudarso (Samping Akok Steel), RT. 06, Kel. Batu Urip Taba, Kec. Lubuk Linggau Timur I, Kota Lubuklinggau, Sumatera Selatan 31626.</p>
+                  <div class="d-flex justify-content-center justify-content-md-start">
+                    <a target="_blank" href="https://maps.app.goo.gl/6PRMThAzKyGYqVog7" class="btn btn-danger"><i class="fa-solid fa-map-location-dot pe-3" ></i>Google Maps</a>
+                  </div>
+                
+
+                <p class="fw-bold mb-0 pt-3 text-center text-md-start">Toko Kedua :</p>
+                <p class="text-center text-md-start">Jl. SMB II (Depan Showroom Mobil Hyundai), RT. 05, Kel. Marga Mulya, Kec. Lubuk Linggau Selatan II, Kota Lubuklinggau, Sumatera Selatan 31628.</p>
+                <div class="d-flex justify-content-center justify-content-md-start">
+                <a target="_blank" href="https://maps.app.goo.gl/kS7FJ8XjcYjQtGFe8" class="btn btn-danger text-center"><i class="fa-solid fa-map-location-dot pe-3"></i>Google Maps</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="scrollspyHeading5">
+        <div class="container">
+          <h2 class="text-center fw-bold text-uppercase">Galeri</h2>
+          <div class="divider"></div>
+          <div class="row pt-4 justify-content-center">
+            <div class="col-md-8 d-flex flex-wrap gap-3 justify-content-center">
+              <div class="gallery-container">
+              <a href="assets/image/image_1.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="assets/image/image_1.jpeg" class="img-fluid">
+            </a>
+          </div>
+            <div class="gallery-container">
+              <a href="assets/image/image_2.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="assets/image/image_2.jpeg" class="img-fluid">
+            </a>
+          </div>
+            <div class="gallery-container">
+              <a href="assets/image/image_3.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="assets/image/image_3.jpeg" class="img-fluid">
+            </a>
+          </div>
+            <div class="gallery-container">
+              <a href="assets/image/image_4.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="assets/image/image_4.jpeg" class="img-fluid">
+            </a>
+          </div>
+            <div class="gallery-container">
+              <a href="assets/image/image_5.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="assets/image/image_5.jpeg" class="img-fluid">
+            </a>
+          </div>
+            <div class="gallery-container">
+              <a href="assets/image/image_6.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="assets/image/image_6.jpeg" class="img-fluid">
+            </a>
+          </div>
+            </div>
+
+        </div>
+      </section>
+
+      <!-- <footer class="footer py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+          <div class="col-md-12 col-12 footer-container">
+            <div class="row">
+              <div class="col-md-6 d-flex align-items-center flex-column justify-content-center">
+                <h2 class="fw-bold text-white ps-5 footer-tittle">Kontak Kami</h2>
+                <div class="sosmed d-flex gap-4 justify-content-center">
+                  <i class="fa-brands fa-instagram" style="color: white;font-size: 3.8rem;"></i>
+                  <i class="fa-brands fa-facebook" style="color: white;font-size: 3.5rem;"></i>
+                  <i class="fa-brands fa-whatsapp" style="color: white;font-size: 3.8rem;"></i>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="footer-image d-flex justify-content-center">
+                  <img src="assets/image/footer-img.png" height="300" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </footer> -->
+
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <h4>Tentang Kami</h4>
+                    <p>Kami adalah toko hewan peliharaan yang menyediakan berbagai produk dan layanan berkualitas untuk hewan kesayangan Anda. Dari pakan hingga perawatan, kami memiliki segalanya untuk kebutuhan anabul Anda.</p>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h4>Kontak Kami</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Yos. Sudarso, Lubuklinggau, Sumatera Selatan</li>
+                        <li><i class="fas fa-phone-alt"></i> +62 895-3243-95789</li>
+                        <li><i class="fas fa-envelope"></i> info@petshop.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h4>Ikuti Kami</h4>
+                    <ul class="social-list ">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SMR Pet Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+      <!-- <section class="layanan py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold text-uppercase">Layanan Kami</h2>
+            <div class="divider"></div>
+            <div class="row pt-3 d-flex justify-content-center"> -->
+                <!-- <div class="kategori_produk" onclick="showInfo('kelinci')">
+                    <h4>Pakan Kelinci</h4>
+                </div>
+                <div class="kategori_produk" onclick="showInfo('kandang')">
+                    <h4>Kandang</h4>
+                </div>
+                <div class="kategori_produk" onclick="showInfo('vitamin')">
+                    <h4>Vitamin</h4>
+                </div> -->
+            
+            <!-- <div class="layanan-container" onclick="showInfo('kelinci')">
+                <img src="https://images.pexels.com/photos/4001296/pexels-photo-4001296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            </div>
+            <div class="layanan-container">
+                <img src="https://images.pexels.com/photos/4520484/pexels-photo-4520484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            </div>
+            <div class="layanan-container">
+                <img src="https://images.pexels.com/photos/2071882/pexels-photo-2071882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+            </div>
+            <div class="layanan-container">
+                <img src="https://images.pexels.com/photos/686094/pexels-photo-686094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+            </div>
+            
+            </div>
+            <div class="info-container" id="kelinci-info">
+                <div class="container">
+                    <div class="row justify-content-center gap-3">
+                        <h2 class="text-center">Pakan Kucing</h2>
+                        <div class="pakan-container">
+                            <div class="pakan-image">                              
+                                <img src="assets/image/whiskas.png" alt="">
+                            </div>
+                            <div class="pakan-title text-center">
+                                <h3>Whiskas 1KG</h3>
+                                <p>RP 20.000</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                          <img src="assets/image/whiskas.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                          <img src="https://eom.org/wp-content/uploads/2024/03/dogs-1264x579.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-container" id="kandang-info">
+                <h4>Informasi Kandang</h4>
+                <img src="assets/image/kandang.jpg" alt="Kandang">
+                <p>Harga: Rp200.000</p>
+                <p>Kandang yang nyaman dan aman untuk hewan peliharaan Anda.</p>
+            </div>
+            <div class="info-container" id="vitamin-info">
+                <h4>Informasi Vitamin</h4>
+                <img src="assets/image/vitamin.jpg" alt="Vitamin">
+                <p>Harga: Rp30.000</p>
+                <p>Vitamin untuk menjaga kesehatan dan kebugaran hewan peliharaan Anda.</p>
+            </div>
+        </div>
+    </section> -->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
+    <script src="https://kit.fontawesome.com/600618a0e6.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+  </body>
+</html>
