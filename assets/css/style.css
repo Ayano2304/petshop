@@ -6,7 +6,7 @@
 }
 
 .nav-link.active {
-color: rgb(238,136,34) !important; /* Ubah warna sesuai keinginan */
+color: rgb(238,136,34) !important; 
 }
 
 .scrolled{
@@ -16,14 +16,12 @@ color: rgb(238,136,34) !important; /* Ubah warna sesuai keinginan */
 section.hero{
     background: rgb(238,136,34);
 background: linear-gradient(270deg, rgba(238,136,34,1) 23%, rgba(11,94,215,1) 100%);
-    /* background-color: #ee8822; */
     border-bottom-left-radius: 8rem;
     padding-top: 7rem;
     padding-bottom: 5rem;
 }
 
 section.about-us{
-    /* background-color: #F7F8FC; */
     border-bottom-right-radius: 8rem;
 }
 
@@ -63,6 +61,7 @@ section.kategori .kategori-desc{
 .hero-image-container{
     width: 500px;
     height: 500px;
+    padding-right: 0;
 }
 
 .hero-image-container img{
@@ -104,11 +103,9 @@ section.selling,section.gallery{
 }
 
 section.selling .selling__container{
-    /* /* width: 250px; */
     height: 300px;
     padding-bottom: 2em;
     padding-top: 1em; 
-    /* background: burlywood; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -198,10 +195,10 @@ box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 
 .pakan-container{
     width: 250px;
     height: 300px;
-        padding-top: 1rem;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        border-radius: 1rem;
-        border: 3px solid #0000
+    padding-top: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    border: 3px solid #0000
 }
 
 .pakan-image{
@@ -335,8 +332,8 @@ section.kategori,section.layanan,section.lokasi,section.selling,section.gallery{
     }
 
     section.gallery .gallery-container{
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
 
     .footer .row {
