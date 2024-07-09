@@ -5,31 +5,47 @@
     text-decoration: none;
 }
 
+section.kategori{
+    background-image: url('../image/bg-pattern.jpg');
+    background-size: cover;
+    background-color: #FFFAF5;
+
+}
+
 .nav-link.active {
-color: rgb(238,136,34) !important; /* Ubah warna sesuai keinginan */
+color: rgb(238,136,34) !important; 
+}
+
+.dropdown-item{
+    font-weight: bold;
+
+}
+
+.dropdown-item:active{
+    background-color: #ed5c01;
 }
 
 .scrolled{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-section.hero{
+/* section.hero{
     background: rgb(238,136,34);
-background: linear-gradient(270deg, rgba(238,136,34,1) 23%, rgba(11,94,215,1) 100%);
-    /* background-color: #ee8822; */
+    background: linear-gradient(270deg, rgba(238,136,34,1) 23%, rgba(11,94,215,1) 100%);
     border-bottom-left-radius: 8rem;
     padding-top: 7rem;
     padding-bottom: 5rem;
-}
+    position: relative;
+} */
 
 section.about-us{
-    /* background-color: #F7F8FC; */
     border-bottom-right-radius: 8rem;
 }
 
 section.about-us .about-teks{
     background-color: #fff;
 }
+
 
 section.kategori .kategori-container{
     width: 300px;
@@ -63,6 +79,7 @@ section.kategori .kategori-desc{
 .hero-image-container{
     width: 500px;
     height: 500px;
+    padding-right: 0;
 }
 
 .hero-image-container img{
@@ -99,21 +116,22 @@ section.kategori .kategori-desc{
     padding-inline: 50px;
 }
 
-section.selling,section.gallery{
-    background-color: #F9F9F9;
+section.selling,section.gallery,section.about-us,section.testimoni{
+    /* background-color: #F9F9F9; */
+    background-image: url('../image/bg-pattern.jpg');
+    background-size: cover;
 }
 
 section.selling .selling__container{
-    /* /* width: 250px; */
-    height: 300px;
+    min-height: 350px;
     padding-bottom: 2em;
     padding-top: 1em; 
-    /* background: burlywood; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
 }
 
 section.selling .selling__container .icon i{
@@ -198,10 +216,10 @@ box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 
 .pakan-container{
     width: 250px;
     height: 300px;
-        padding-top: 1rem;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        border-radius: 1rem;
-        border: 3px solid #0000
+    padding-top: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    border: 3px solid #0000
 }
 
 .pakan-image{
@@ -308,7 +326,6 @@ section.kategori,section.layanan,section.lokasi,section.selling,section.gallery{
 .footer-bottom {
     text-align: center;
     padding: 10px 0;
-    border-top: 1px solid #fcfcfc;
     margin-top: 20px;
 }
 
@@ -316,6 +333,135 @@ section.kategori,section.layanan,section.lokasi,section.selling,section.gallery{
     font-size: 14px;
     color: #ffffff;
 }
+
+.video-container{
+    /* background-color: navy; */
+    height: 400px;
+}
+
+.foto-container{
+    width: 100%;
+    height: 150px;
+    background-color: cadetblue;
+}
+
+.foto-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-container video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+}
+
+.hero-2{
+    background-color: #f7f5ef;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+.rectangle-side{
+    background-color: #ed5c01;
+    width: 150px;
+    height: 150px;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle-content{
+    color: white;
+    text-align: center;
+}
+
+.rectangle-content h3{
+    font-weight: bold;
+}
+
+.rectangle-content p{
+    margin-top: -10px;
+}
+.hero-new-img{
+    background-color: #7ca9ed;
+    width: 700px;
+    height: 500px;
+    border-radius: 3rem;
+    position: relative;
+}
+
+.hero-new-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.cat-dog{
+position: absolute;
+/* bottom: -29px; */
+left: 50%;
+transform: translateX(-50%);
+}
+
+.hero-desc-new h3{
+    font-weight: bold;
+    font-size: 44px;
+}
+
+.hero-desc-new p{
+    font-size: 18px;
+}
+
+.explore{
+    background-color: #ed5c01;
+    color: white;
+    font-weight: 600;
+    padding: 5px 30px;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.mySwiper {
+width: 70%;
+height: 100%;
+/* background-color: greenyellow; */
+display: flex;
+justify-content: center;
+}
+
+/* section.testimoni{
+    height: 100vh;
+} */
+
+.testimoni-container{
+    /* background-color: navy; */
+    height: 550px;
+    width: 300px;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+.testimoni-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 
 @media(max-width:768px){
@@ -335,8 +481,8 @@ section.kategori,section.layanan,section.lokasi,section.selling,section.gallery{
     }
 
     section.gallery .gallery-container{
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
 
     .footer .row {
@@ -346,4 +492,31 @@ section.kategori,section.layanan,section.lokasi,section.selling,section.gallery{
     .social-list{
         justify-content: center;
     }
+
+    section.selling,section.gallery,section.about-us{
+        background-size: fill;
+    }
+
+    .hero-new-img{
+        width: 350px;
+        height: 350px;
+    }
+
+    .rectangle-side{
+        margin-top: 3em;
+        width: 130px;
+        height: 130px;
+    }
+
+    .hero-new-img{
+        overflow: hidden;
+    }
+
+    /* .testimoni-container{
+        width: 140px;
+    } */
+
+
+
+    
 }

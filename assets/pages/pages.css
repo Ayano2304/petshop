@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../image/paw-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.hero-pages{
+    background-color: #0B5ED7;
+    /* height: 60vh; */
+    padding-top: 8rem;
+}
+
+.reservasi-btn{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    border-radius: 2em;
+    padding-inline: 25px;
+}
+
+.reservasi-btn i{
+    font-size: 30px;
+}
+
+.reservasi-btn span{
+    font-weight: 600;
+}
+
+section.content{
+    margin-top: -9em;
+    position: relative;
+}
+
+.swiper {
+  width: 600px;
+  height: 500px;
+}
+
+.swiper-slide{
+    position: relative;
+}
+
+.swiper-slide::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: #0B5ED7;
+  z-index: 2;
+  /* background-color: #00feba; */
+}
+/* 
+.overlay {
+  position: relative;
+  display: block;
+  background-color: #703434;
+} */
+
+.overlay video {
+  /* display: block; */
+  width: 100%;
+  border-radius: 2rem;
+  z-index: 0;
+  background-color: rgb(16, 127, 224);
+}
+
+.swiper-slide img,.swiper-slide video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    border: 5px solid white;
+}
+
+.image-container-pages{
+    width: 200px;
+    height: 200px;
+    border-radius: 2rem;
+}
+
+.image-container-pages img{
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.cat-content{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 420px;
+}
+
+.dropdown-item:active{
+    background-color: #ed5c01;
+}
+
+.divider-title{
+    width: 40px;
+    height: 5px;
+    background-color: #0B5ED7;
+}
+
+.section-title{
+    padding-inline: 15px;
+}
+
+
+
+
+
+@media(max-width:768px){
+    section.hero-pages{
+        height: 100vh;
+    }
+
+    .image-hero-pages{
+        margin-top: 4rem;
+    }
+
+    section.hero-pages{
+        padding-top: 2rem;
+    }
+
+    .reservasi-btn{
+        font-size: 18px;
+    }
+
+    .swiper{
+        max-width: 350px;
+    }
+
+    section.content{
+        margin-top: 1rem;
+    }
+
+    section.content h1{
+        font-size: 44px;
+    }
+
+    .image-container-pages{
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+}

@@ -1,17 +1,17 @@
-function activateLink(element) {
-  // Menghapus kelas 'active' dari semua link
-  document.querySelectorAll(".nav-link").forEach(function (link) {
-    link.classList.remove("active");
-  });
+// function activateLink(element) {
+//   // Menghapus kelas 'active' dari semua link
+//   document.querySelectorAll(".nav-link").forEach(function (link) {
+//     link.classList.remove("active");
+//   });
 
-  // Menambahkan kelas 'active' ke link yang diklik
-  element.classList.add("active");
+//   // Menambahkan kelas 'active' ke link yang diklik
+//   element.classList.add("active");
 
-  // Menutup navbar jika dalam mode collapse (untuk layar kecil)
-  if ($(".navbar-toggler").is(":visible")) {
-    $(".navbar-collapse").collapse("hide");
-  }
-}
+//   // Menutup navbar jika dalam mode collapse (untuk layar kecil)
+//   if ($(".navbar-toggler").is(":visible")) {
+//     $(".navbar-collapse").collapse("hide");
+//   }
+// }
 
 function showInfo(category) {
   // Sembunyikan semua info container
@@ -36,4 +36,36 @@ document.addEventListener("scroll", function () {
   } else {
     navbar.classList.remove("scrolled");
   }
+});
+
+// const play = document.getElementsByClassName("bx-play-circle");
+// console.log(play);
+// play.addEventListener("click", function() {
+//   console.log("Play Ditekan");
+
+// })
+
+function activateLink(element) {
+  // Menghapus kelas 'active' dari semua link
+  document.querySelectorAll(".nav-link").forEach(function (link) {
+    link.classList.remove("active");
+  });
+
+  // Menambahkan kelas 'active' ke link yang diklik
+  element.classList.add("active");
+
+  // Menutup navbar jika dalam mode collapse (untuk layar kecil) dan link bukan dropdown toggle
+  if ($(".navbar-toggler").is(":visible") && !element.classList.contains("dropdown-toggle")) {
+    $(".navbar-collapse").collapse("hide");
+  }
+}
+
+// Event listener untuk dropdown items
+document.querySelectorAll(".dropdown-menu .dropdown-item").forEach(function (item) {
+  item.addEventListener("click", function () {
+    // Menutup navbar jika dalam mode collapse (untuk layar kecil)
+    if ($(".navbar-toggler").is(":visible")) {
+      $(".navbar-collapse").collapse("hide");
+    }
+  });
 });
