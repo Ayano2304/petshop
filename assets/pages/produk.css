@@ -1,0 +1,15 @@
+section.hero-pages{
+    background-color: #0B5ED7;
+    /* height: 60vh; */
+    padding-top: 5rem;
+}
+
+section.produk-content{
+    margin-top: -10rem;
+}
+
+@media(max-width:768px){
+    section.produk-content{
+        margin-top: 0rem;
+    }
+}

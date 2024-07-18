@@ -197,21 +197,41 @@ max-width: 100%;
 height: auto;
 }
 
-.layanan-container{
-    width: 180px;
-    height: 170px;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 100%;
+.lyn-con{
+    /* background-color: crimson; */
+    width: 250px;
+    height: 430px;
+    /* position: relative; */
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    padding-bottom: 2rem;
+    background-color: #fff;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
-.layanan-container img{
+.lyn-img{
+    /* background-color: navy; */
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-     border-radius: 100%;
-box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
+    height: 200px;
+    /* position: absolute; */
+    margin-top: -30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 2rem;
+}
+
+.lyn-img img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 2rem;
+}
+
+/* .lyn-teks p{
+    padding-inline: 1rem;
+} */
+
+
 
 .pakan-container{
     width: 250px;
@@ -429,21 +449,22 @@ transform: translateX(-50%);
 }
 
 .mySwiper {
-width: 70%;
+width: 100%;
 height: 100%;
 /* background-color: greenyellow; */
-display: flex;
-justify-content: center;
 }
 
-/* section.testimoni{
-    height: 100vh;
-} */
+
+.swiper-slide{
+    /* background-color: coral; */
+    width: 200px;
+    display: flex;
+}
 
 .testimoni-container{
     /* background-color: navy; */
-    height: 550px;
-    width: 300px;
+    height: 500px;
+    /* width: 300px; */
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
@@ -457,7 +478,15 @@ justify-content: center;
     cursor: pointer;
 }
 
+button.produk-kategori{
+    font-weight: 600;
+    border-radius: 2em;
+}
 
+.produk-kategori.active {
+background-color: #fff; /* Sesuaikan dengan efek active yang diinginkan */
+color: #0B5ED7;
+}
 
 
 
@@ -512,9 +541,6 @@ justify-content: center;
         overflow: hidden;
     }
 
-    /* .testimoni-container{
-        width: 140px;
-    } */
 
 
 
